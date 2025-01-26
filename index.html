@@ -138,7 +138,6 @@
             background-color: #001F3F;
             padding: 15px;
             font-size: 0.9em;
-            border-radius: 20px;
             margin-top: auto;
         }
 
@@ -146,6 +145,67 @@
             font-size: 1.5em;
             margin-bottom: 20px;
             font-weight: bold;
+        }
+
+        /* Styling the sign-in form */
+        #signin form {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            width: 300px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+        }
+
+        #signin label {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 5px;
+            text-align: left;
+            color: #FFD700;
+        }
+
+        #signin input {
+            width: 85%;
+            padding: 10px;
+            border: 2px solid #003F7F;
+            border-radius: 5px;
+            background: #0A0A0A;
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 10px;
+            transition: border 0.3s;
+        }
+
+        #signin input:focus {
+            border-color: #FFD700;
+            outline: none;
+        }
+
+        #signin button {
+            background: #003F7F;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            width: 100%;
+        }
+
+        #signin button:hover {
+            background: #004F9F;
+        }
+
+        #signin button:active {
+            transform: scale(0.95);
+        }
+
+        #loginError {
+            color: red;
+            margin-top: 10px;
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -193,6 +253,12 @@
     <div id="signin" class="container">
         <h2>Sign In</h2>
         <p>Sign in to access exclusive club resources.</p>
+        <form id="loginForm">
+
+            <br><br>
+            <button type="button" onclick="validateLogin()">Sign In</button>
+        </form>
+        <p id="loginError" style="color: red; display: none;">Invalid credentials. Please try again.</p>
     </div>
 
     <footer>
@@ -230,6 +296,17 @@
         }
 
         setTimeout(autoSlide, 5000);
+
+
+
+        function validateLogin() {
+
+            if (true) {
+                window.location.href = "https://shattereddisk.github.io/rickroll/rickroll.mp4"; // Rickroll URL
+            }
+
+        }
+
     </script>
 </body>
 
