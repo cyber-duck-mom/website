@@ -1,3 +1,52 @@
-<P>
-    rose state college cyber security club
-</P>
+<!DOCTYPE html>
+
+<head>
+    <link href="libraries/bulma.min.css" rel="stylesheet">
+    <script src="libraries/lucide.min.js"></script>
+    <script src="libraries/three.min.js"></script>
+    <script src="libraries/vanta.dots.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cyber Club</title>
+</head>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        VANTA.DOTS({
+            el: "#dots",
+            minHeight: 200.00,
+            minWidth: 200.00,
+            showLines: false,
+            backgroundColor: 0x151515,
+            color: 0x3860A7
+        })
+    })
+</script>
+
+<body>
+    <div id="dots"></div>
+    
+    <p class="has-text-right m-3">
+        <button>
+            <i data-lucide="menu"></i>
+        </button>
+    </p>  
+    
+    <div id="title" class="has-text-centered">
+        ROSE STATE COLLEGE
+        <hr>
+        CYBER CLUB
+    </div>
+
+    <p id="info" class="has-text-centered">
+        Friday - 4:30 PM @ TACC Quad
+    </p>
+
+    <div class="has-text-centered" style="margin-top: 100px;">
+        <img style="width: 150px;" src="assets/duck.png">
+    </div>
+
+    <script>lucide.createIcons()</script>
+</body>
