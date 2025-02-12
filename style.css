@@ -78,7 +78,6 @@ button, img {
   top: -1vh;
   width: 25px;
   height: auto;
-  z-index: 1;
   transform: translateY(0);
   animation: fall 3s linear forwards, neon-blink 1s infinite alternate, color 5s;
 }
