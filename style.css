@@ -14,7 +14,7 @@ body {
 }
 
 button, img {
-  filter: drop-shadow(0px 0px 5px #3860A780);
+  filter: drop-shadow(0px 0px 5px #AD3861);
 }
 
 #dots {
@@ -34,10 +34,10 @@ button, img {
   padding-bottom: 75px;
 
   animation: neon-blink 5s infinite alternate;
-  filter: drop-shadow(0px 0px 25px #3860A7);
+  filter: drop-shadow(0px 0px 25px #AD3861);
 
   hr {
-    background-color: #3860A750;
+    background-color: #AD3861;
     width: 225px;
     margin: auto;
   }
@@ -47,7 +47,7 @@ button, img {
   font-family: sans-serif;
   font-size: 25px;
   color: #FFF;
-  filter: drop-shadow(0px 0px 5px #F6D64A80);
+  filter: drop-shadow(0px 0px 5px #AD3861);
 }
 
 @font-face {
@@ -62,4 +62,30 @@ button, img {
   98% {opacity: 1;}
   99% {opacity: .5;}
   100% {opacity: 1;}
+}
+
+/* Valentines */
+
+#heart {
+  position: fixed;
+  top: -1vh;
+  width: 25px;
+  height: auto;
+  z-index: 1;
+  transform: translateY(0);
+  animation: fall 3s linear forwards, neon-blink 1s infinite alternate, color 5s;
+}
+
+#text {
+  font-family: cursive;
+  font-size: 25px;
+  color: #FFF;
+  margin-bottom: 10px;
+  filter: drop-shadow(0px 0px 5px #AD3861);
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(101vh);
+  }
 }
