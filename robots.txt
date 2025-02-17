@@ -1,5 +1,2 @@
 User-agent: nsa
 Allow: /
-
-User-agent: cupid
-Allow: <3
